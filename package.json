@@ -1,0 +1,29 @@
+{
+  "name": "rocket-svelte",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build && cargo build --release",
+    "serve": "concurrently --kill-others --raw \"vite build -w\" \"cargo run --release\"", 
+    "dev:serve": "concurrently --kill-others --raw \"cargo watch -x run -w ./server\" \"vite\"",
+    "dev:rocket": "cargo watch -x run -w ./server",
+    "dev:vite": "vite",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^1.0.1",
+    "@tsconfig/svelte": "^3.0.0",
+    "autoprefixer": "^10.4.7",
+    "concurrently": "^7.2.2",
+    "postcss": "^8.4.14",
+    "svelte": "^3.49.0",
+    "svelte-check": "^2.8.0",
+    "svelte-preprocess": "^4.10.7",
+    "tailwindcss": "^3.1.6",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.0"
+  }
+}
