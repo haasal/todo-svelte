@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { newTodo, todos } from "../store/stores";
+    import { newTodo, todos, newEmoji } from "../store/stores";
 
     function addTodo() {
         if (!$newTodo) {
@@ -9,12 +9,13 @@
         let newTodoObj = {
             text: $newTodo,
             completed: false,
-            icon: "🍌",
+            icon: $newEmoji,
             deleted: false,
         };
 
         $todos = [...$todos, newTodoObj];
         $newTodo = "";
+        $newEmoji = "📝";
     }
 </script>
 

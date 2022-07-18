@@ -1,4 +1,4 @@
-import type { Todo } from "src/types";
+import type { Todo } from "@/types";
 import { writable } from "svelte/store";
 
 export let todos = writable([
@@ -8,3 +8,4 @@ export let todos = writable([
 ] as Todo[]);
 
 export let newTodo = writable("");
+export let newEmoji = writable("");
