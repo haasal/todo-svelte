@@ -1,9 +1,9 @@
 <script lang="ts">
-    import AddTodoButton from "./lib/AddTodoButton.svelte";
-    import SubmitButton from "./lib/SubmitButton.svelte";
+    import AddTodoButton from "@/lib/AddTodoButton.svelte";
+    import SubmitButton from "@/lib/SubmitButton.svelte";
 
-    import TodoItems from "./lib/TodoItems.svelte";
-    import { newTodo } from "./store/stores";
+    import TodoItems from "@/lib/TodoItems/TodoItems.svelte";
+    import { newTodo } from "@/store/stores";
 </script>
 
 <main class="flex justify-center items-center h-screen">

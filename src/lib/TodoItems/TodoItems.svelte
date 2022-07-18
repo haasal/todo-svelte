@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { todos } from "../store/stores";
-    import TodoItem from "./TodoItem.svelte";
+    import { todos } from "@/store/stores";
+    import TodoItem from "@/lib/TodoItems/TodoItem/TodoItem.svelte";
 </script>
 
 <div class="flex flex-col space-y-2">
